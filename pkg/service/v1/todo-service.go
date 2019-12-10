@@ -227,7 +227,6 @@ func (s *toDoServiceServer) ReadAll(ctx context.Context, req *v1.ReadAllRequest)
 	if err := s.checkAPI(req.Api); err != nil {
 		return nil, err
 	}
-	fmt.Println("sssss")
 
 	// get SQL connection from pool
 	c, err := s.connect(ctx)
